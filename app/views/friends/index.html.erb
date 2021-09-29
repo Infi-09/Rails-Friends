@@ -1,0 +1,35 @@
+<% if user_signed_in? %>
+
+<table class="table table-striped table-bordered table-hover">
+  <thead class="table-dark">
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Twitter</th>
+      <th> </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @friends.each do |friend| %>
+      <% if friend.user == current_user %>
+      <tr>
+        <td><%= link_to friend.firstName+' '+friend.lastName, friend %></td>
+        <td><%= friend.Email %></td>
+        <td><%= friend.Phone %></td>
+        <td><%= friend.Twitter %></td>
+        <td><%= link_to 'Delete', friend, method: :delete, data: { confirm: 'Are you sure?'}, class:"btn btn-outline-danger btn-sm" %></td>
+      </tr>
+      <% end %>
+      <% end %>
+  </tbody>
+</table>
+
+<br>
+<%= link_to 'Add Friend', new_friend_path, class:"btn btn-dark" %>
+
+<% else %>
+  <h1>Infinity World</h1>
+  <h2>First Webpage on Ruby on Rails</h2>
+<% end %>
