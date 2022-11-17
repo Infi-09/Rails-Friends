@@ -1,24 +1,35 @@
-# Friends List App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<h1>Friends List built with Rails</h1>
 
-Things you may want to cover:
+<p>Friend List is a web application built with Ruby on Rails where the user can register, login, list and create new friends contacts and was created with the aim of knowing more about this framework.</p>
 
-* Ruby version
+## 💻 Getting started
 
-* System dependencies
+### Requirements
 
-* Configuration
+- [Node.js](https://nodejs.org/en/)
+- [Yarn](https://classic.yarnpkg.com/) or [npm](https://www.npmjs.com/)
+- [Bundle](https://bundler.io)
+- [Rails](https://guides.rubyonrails.org/v5.0/getting_started.html)
 
-* Database creation
+**Clone the project and access the folder**
 
-* Database initialization
+```bash
+$ git clone https://github.com/eltonlazzarin/friends-list-rails.git
 
-* How to run the test suite
+$ cd friends-list-rails
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+**Follow the steps below**
 
-* Deployment instructions
+```bash
+# Install the dependencies
+$ bundle install
+$ yarn
 
-* ...
+# Run database tables
+$ rails db:migrate
+
+# Run the web app
+$ rails s
+```
