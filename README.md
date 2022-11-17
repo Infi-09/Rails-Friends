@@ -15,9 +15,9 @@
 **Clone the project and access the folder**
 
 ```bash
-$ git clone https://github.com/eltonlazzarin/friends-list-rails.git
+$ git clone https://github.com/Infi-09/Rails-Friends.git
 
-$ cd friends-list-rails
+$ cd Rails-Friends
 ```
 
 **Follow the steps below**
